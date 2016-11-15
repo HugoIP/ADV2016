@@ -12,6 +12,8 @@ public class Movimiento : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Debug.Log ("El nombre de este objeto es:       ----------   "+gameObject.name);
+		/*
 		if(contador != 0){
 			//Forma de acumular un valor en una variable
 			//sumando de 1 en 1
@@ -38,11 +40,20 @@ public class Movimiento : MonoBehaviour {
 			//Modificar para la condicion
 			contador=10;
 		}
+		*/
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		//Gira el objeto que tenga este script
+		if(gameObject.name=="Plane"){
+			transform.Rotate (Vector3.up * Time.deltaTime * 50.0f);
+		}
+		else
+		{
+			transform.Rotate (Vector3.down * Time.deltaTime * 50.0f);
+		}
 
 	}
 }
