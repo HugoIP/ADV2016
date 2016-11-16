@@ -6,6 +6,12 @@ public class Movimiento : MonoBehaviour {
 	public int contador=8;
 
 	public float distancia=0.5f;
+	//0   niño
+	//1   niña
+	public int genero=0;
+	public Color32 color;
+
+	public float acumulador=0;
 
 	//Nombres
 	public string profesor="HugoIP";
@@ -13,47 +19,41 @@ public class Movimiento : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("El nombre de este objeto es:       ----------   "+gameObject.name);
-		/*
-		if(contador != 0){
-			//Forma de acumular un valor en una variable
-			//sumando de 1 en 1
-			contador = contador + 1;
-			//Obligo a que contador sea 0
-			contador = 0;
-			//contador++;
-			//contador += 5;
-		}
-		else{
-
-		}
-
-
-		//Loops
-		for(int i=0;i<10;i++){
-			contador++;
-			//contador = i;
-		}
-
-		while(contador<10)
-		{
-			//Codigo que ejecuta
-			//Modificar para la condicion
-			contador=10;
-		}
-		*/
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		acumulador = acumulador + Time.deltaTime;
+
+		if(acumulador < 5)
+		{
+			//azul
+			Color newColor = new Color(0,0,1);
+			gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+
+		}
+		if(acumulador>5)
+		{
+			//rosa
+			Color newColor = new Color(1f,0f, 0f);
+			gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+
+		}
+		if(acumulador>10)
+			acumulador = 0;
+
+
+
+
+
 		//Gira el objeto que tenga este script
 		if(gameObject.name=="Plane"){
 			transform.Rotate (Vector3.up * Time.deltaTime * 50.0f);
 		}
-		else
-		{
+
+		if(gameObject.name=="Cube"){
 			transform.Rotate (Vector3.down * Time.deltaTime * 50.0f);
 		}
-
 	}
 }

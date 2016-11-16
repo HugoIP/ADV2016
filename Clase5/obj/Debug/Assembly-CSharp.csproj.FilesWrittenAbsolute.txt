@@ -1,0 +1,13 @@
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/UnityEngine.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/UnityEditor.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Mono.Cecil.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Unity.DataContract.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/sistemas/Desktop/ADV2016/Clase5/Temp/bin/Debug/Mono.Cecil.Mdb.dll
